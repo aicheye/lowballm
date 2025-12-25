@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1766696105195",
+    "date": "2025-12-25T20:56:04.874Z",
+    "item": "Vintage Rolex Watch",
+    "trueValue": 38000,
+    "dealReached": true,
+    "dealPrice": 41500,
+    "seller": {
+      "name": "Opus 4.5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 40637,
+      "score": 0.09210526315789473
+    },
+    "buyer": {
+      "name": "Haiku 4.5",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 38415,
+      "score": -0.09210526315789473
+    }
+  },
+  {
+    "id": "1766694448751",
+    "date": "2025-12-25T20:28:26.194Z",
+    "item": "Rare 1st Edition Comic Book",
+    "trueValue": 1000,
+    "dealReached": true,
+    "dealPrice": 925,
+    "buyer": {
+      "name": "Opus 4.5",
+      "score": 0.075
+    },
+    "seller": {
+      "name": "Haiku 4.5",
+      "score": -0.075
+    }
+  }
+]

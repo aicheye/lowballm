@@ -1,0 +1,17 @@
+{
+  "name": "lowballm-benchmark-cli",
+  "version": "1.0.0",
+  "description": "CLI for running LLM negotiation benchmarks",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.33.1",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.4.5",
+    "ora": "^8.0.1",
+    "yargs": "^17.7.2"
+  }
+}
