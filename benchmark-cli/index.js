@@ -8,15 +8,13 @@ const VIEWER_LOGS_DIR = path.resolve("../results-viewer/public/logs");
 
 // Models
 const MODELS = {
-  OPUS: "claude-opus-4-5-20251101",
-  HAIKU: "claude-haiku-4-5-20251001",
-  // Fallbacks if user provided IDs fail (just primarily for dev testing if no access)
-  // OPUS: 'claude-3-opus-20240229',
-  // HAIKU: 'claude-3-haiku-20240307'
+  OPUS_4_5: "claude-opus-4-5-20251101",
+  HAIKU_4_5: "claude-haiku-4-5-20251001",
+  SONNET_4_5: "claude-sonnet-4-5-20250929"
 };
 
-async function runNegotiation(runId) {
-  console.log(chalk.cyan(`\nStarting Run ${runId}...`));
+async function runMatch(runId) {
+  console.log(chalk.cyan(`\nStarting Match ${runId}...`));
 
   // Setup Scenario
   const item = "Vintage Rolex Watch";
@@ -32,7 +30,7 @@ async function runNegotiation(runId) {
 
   // specific requests: Opus 4.5 vs Haiku 4.5
   // Let's randomize who is buyer/seller or fix it?
-  // MVP: Round 1 -> Opus Seller, Haiku Buyer.
+  // MVP: Match 1 -> Opus Seller, Haiku Buyer.
   // We can swap in typical tournament fashion. For MVP, let's do one focused config per run call.
 
   // Config: Buyer = Opus, Seller = Haiku
@@ -41,16 +39,14 @@ async function runNegotiation(runId) {
     MODELS.OPUS,
     "seller",
     item,
-    sellerEst,
-    trueValue,
+    sellerEst 
   );
   const buyer = new Agent(
     "Haiku 4.5",
     MODELS.HAIKU,
     "buyer",
     item,
-    buyerEst,
-    trueValue,
+    buyerEst
   );
 
   let turns = 0;
@@ -117,10 +113,10 @@ async function runNegotiation(runId) {
 
   if (dealReached && dealPrice) {
     console.log(chalk.green(`\nDEAL REACHED at $${dealPrice}!`));
-    // Seller Score: (P - True) / True
-    sellerScore = (dealPrice - trueValue) / trueValue;
-    // Buyer Score: (True - P) / True
-    buyerScore = (trueValue - dealPrice) / trueValue;
+    // Seller Score: (P - Est) / Est
+    sellerScore = (dealPrice - sellerEst) / sellerEst;
+    // Buyer Score: (Est - P) / Est
+    buyerScore = (buyerEst - dealPrice) / buyerEst;
   } else {
     console.log(chalk.red(`\nNO DEAL REACHED.`));
   }
@@ -190,4 +186,4 @@ async function runNegotiation(runId) {
 
 // Simple Runner
 const runId = Date.now().toString();
-runNegotiation(runId).catch(console.error);
+runMatch(runId).catch(console.error);

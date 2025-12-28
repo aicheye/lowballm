@@ -42,12 +42,14 @@ Rules:
 3. If the deal is not good for you based on your private estimate, do not accept it easily.
 4. You have a maximum of 6 turns to reach a deal. If no deal is reached, you get a severe penalty.
 5. If you believe a fair deal is reached, you can accept.
+6. You cannot offer non-monetary or debt concessions. The only concessions you can make are to the price.
+7. If your opponent offers non-monetary or debt concessions, you should ignore it and only respond to the price.
 
 Output Format:
 You MUST output your response in valid JSON format ONLY, with two fields:
 {
   "thought": "Internal reasoning about the offer and strategy",
-  "message": "The actual message to send to the opponent",
+  "message": "The actual message to send to the opponent", // DO NOT send HTML or markdown. DO NOT include newlines or extra whitespace.
   "offer": number | null, // The numerical value of the price being discussed/agreed upon.
   "deal": boolean // Set to true ONLY if you are ACCEPTING the opponent's previous offer.
 }
@@ -55,6 +57,7 @@ IMPORTANT:
 - If you are making a proposal, counter-offer, or starting the negotiation: "deal" MUST be false.
 - "deal": true means "I accept your price and the negotiation is over."
 - If you set "deal": true, the "offer" field must equal previous price of the opponent.
+- If your opponent makes no offer in a turn, you can respond with no offer to end negotiation with no deal.
 `;
   }
 

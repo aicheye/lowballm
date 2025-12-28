@@ -1,0 +1,1027 @@
+[
+  {
+    "id": "1766709101518_2",
+    "tournament": "Wild Eagle 20",
+    "date": "2025-12-26T00:33:52.759Z",
+    "item": "Rare Digital Art NFT",
+    "trueValue": 15000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "GPT_5_2",
+      "model": "gpt-5.2",
+      "estimate": 19428,
+      "score": 0
+    },
+    "buyer": {
+      "name": "GPT_5_MINI",
+      "model": "gpt-5-mini",
+      "estimate": 10889,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766708971237_1",
+    "tournament": "Wild Eagle 20",
+    "date": "2025-12-26T00:31:41.516Z",
+    "item": "Used 2020 Tesla Model 3",
+    "trueValue": 25000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "GPT_5_MINI",
+      "model": "gpt-5-mini",
+      "estimate": 24927,
+      "score": 0
+    },
+    "buyer": {
+      "name": "GPT_5_2",
+      "model": "gpt-5.2",
+      "estimate": 21571,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766708910941_1",
+    "tournament": "Wild Eagle 20",
+    "date": "2025-12-26T00:29:27.769Z",
+    "item": "Enterprise SaaS Contract (Annual)",
+    "trueValue": 120000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "HAIKU_4_5",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 101149,
+      "score": 0
+    },
+    "buyer": {
+      "name": "GEMINI_2_5_FLASH",
+      "model": "gemini-2.5-flash",
+      "estimate": 96964,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766708871023_2",
+    "tournament": "Wild Eagle 20",
+    "date": "2025-12-26T00:28:30.939Z",
+    "item": "Enterprise SaaS Contract (Annual)",
+    "trueValue": 120000,
+    "dealReached": true,
+    "dealPrice": 130000,
+    "seller": {
+      "name": "GPT_5_2",
+      "model": "gpt-5.2",
+      "estimate": 115277,
+      "score": 0.12771845207630317
+    },
+    "buyer": {
+      "name": "HAIKU_4_5",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 120417,
+      "score": -0.0795817866248121
+    }
+  },
+  {
+    "id": "1766708816261_1",
+    "tournament": "Wild Eagle 20",
+    "date": "2025-12-26T00:27:51.020Z",
+    "item": "Vintage Rolex Watch",
+    "trueValue": 38000,
+    "dealReached": true,
+    "dealPrice": 39000,
+    "seller": {
+      "name": "HAIKU_4_5",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 39576,
+      "score": -0.014554275318374773
+    },
+    "buyer": {
+      "name": "GPT_5_2",
+      "model": "gpt-5.2",
+      "estimate": 39214,
+      "score": 0.005457234661090427
+    }
+  },
+  {
+    "id": "1766708740996_2",
+    "tournament": "Wild Eagle 20",
+    "date": "2025-12-26T00:26:56.259Z",
+    "item": "Rare Digital Art NFT",
+    "trueValue": 15000,
+    "dealReached": true,
+    "dealPrice": 21750,
+    "seller": {
+      "name": "GPT_5_MINI",
+      "model": "gpt-5-mini",
+      "estimate": 14623,
+      "score": 0.48738288996785883
+    },
+    "buyer": {
+      "name": "HAIKU_4_5",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 21002,
+      "score": -0.03561565565184268
+    }
+  },
+  {
+    "id": "1766708686913_1",
+    "tournament": "Wild Eagle 20",
+    "date": "2025-12-26T00:25:40.994Z",
+    "item": "Premium Domain Name 'AI-Agent.com'",
+    "trueValue": 50000,
+    "dealReached": true,
+    "dealPrice": 46000,
+    "seller": {
+      "name": "HAIKU_4_5",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 32127,
+      "score": 0.431817474398481
+    },
+    "buyer": {
+      "name": "GPT_5_MINI",
+      "model": "gpt-5-mini",
+      "estimate": 46044,
+      "score": 0.000955607679610807
+    }
+  },
+  {
+    "id": "1766708603887_2",
+    "tournament": "Wild Eagle 20",
+    "date": "2025-12-26T00:24:38.171Z",
+    "item": "Premium Domain Name 'AI-Agent.com'",
+    "trueValue": 50000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "GEMINI_2_5_FLASH",
+      "model": "gemini-2.5-flash",
+      "estimate": 39549,
+      "score": 0
+    },
+    "buyer": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 50547,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766708546224_1",
+    "tournament": "Wild Eagle 20",
+    "date": "2025-12-26T00:23:23.885Z",
+    "item": "Used 2020 Tesla Model 3",
+    "trueValue": 25000,
+    "dealReached": true,
+    "dealPrice": 24700,
+    "seller": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 22554,
+      "score": 0.09514941917176555
+    },
+    "buyer": {
+      "name": "GEMINI_2_5_FLASH",
+      "model": "gemini-2.5-flash",
+      "estimate": 24722,
+      "score": 0.0008898956395113664
+    }
+  },
+  {
+    "id": "1766708471650_2",
+    "tournament": "Wild Eagle 20",
+    "date": "2025-12-26T00:22:26.222Z",
+    "item": "Rare Digital Art NFT",
+    "trueValue": 15000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "GPT_5_2",
+      "model": "gpt-5.2",
+      "estimate": 18992,
+      "score": 0
+    },
+    "buyer": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 7738,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766708411207_1",
+    "tournament": "Wild Eagle 20",
+    "date": "2025-12-26T00:21:11.648Z",
+    "item": "Vintage Rolex Watch",
+    "trueValue": 38000,
+    "dealReached": true,
+    "dealPrice": 40000,
+    "seller": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 37959,
+      "score": 0.053768539740246056
+    },
+    "buyer": {
+      "name": "GPT_5_2",
+      "model": "gpt-5.2",
+      "estimate": 40389,
+      "score": 0.00963133526455223
+    }
+  },
+  {
+    "id": "1766708323305_2",
+    "tournament": "Wild Eagle 20",
+    "date": "2025-12-26T00:20:11.206Z",
+    "item": "Premium Domain Name 'AI-Agent.com'",
+    "trueValue": 50000,
+    "dealReached": true,
+    "dealPrice": 56000,
+    "seller": {
+      "name": "GPT_5_MINI",
+      "model": "gpt-5-mini",
+      "estimate": 51849,
+      "score": 0.0800594032671797
+    },
+    "buyer": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 59244,
+      "score": 0.0547565998244548
+    }
+  },
+  {
+    "id": "1766708171530_1",
+    "tournament": "Wild Eagle 20",
+    "date": "2025-12-26T00:18:43.303Z",
+    "item": "Enterprise SaaS Contract (Annual)",
+    "trueValue": 120000,
+    "dealReached": true,
+    "dealPrice": 136000,
+    "seller": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 140300,
+      "score": -0.030648610121168925
+    },
+    "buyer": {
+      "name": "GPT_5_MINI",
+      "model": "gpt-5-mini",
+      "estimate": 136537,
+      "score": 0.003932999846195537
+    }
+  },
+  {
+    "id": "1766708091459_2",
+    "tournament": "Wild Eagle 20",
+    "date": "2025-12-26T00:16:11.528Z",
+    "item": "Rare Digital Art NFT",
+    "trueValue": 15000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "HAIKU_4_5",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 21355,
+      "score": 0
+    },
+    "buyer": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 12359,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766708005601_1",
+    "tournament": "Wild Eagle 20",
+    "date": "2025-12-26T00:14:51.458Z",
+    "item": "Premium Domain Name 'AI-Agent.com'",
+    "trueValue": 50000,
+    "dealReached": true,
+    "dealPrice": 49000,
+    "seller": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 47683,
+      "score": 0.027619906465616677
+    },
+    "buyer": {
+      "name": "HAIKU_4_5",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 39274,
+      "score": -0.2476447522533992
+    }
+  },
+  {
+    "id": "1766707540176_1",
+    "tournament": "Wild Tiger 66",
+    "date": "2025-12-26T00:08:11.721Z",
+    "item": "Used 2020 Tesla Model 3",
+    "trueValue": 25000,
+    "dealReached": true,
+    "dealPrice": 22499,
+    "seller": {
+      "name": "GPT_5",
+      "model": "gpt-5",
+      "estimate": 21255,
+      "score": 0.05852740531639614
+    },
+    "buyer": {
+      "name": "GPT_5_MINI",
+      "model": "gpt-5-mini",
+      "estimate": 22499,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766707459099_2",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-26T00:06:18.686Z",
+    "item": "Rare Digital Art NFT",
+    "trueValue": 15000,
+    "dealReached": true,
+    "dealPrice": 14000,
+    "seller": {
+      "name": "GPT_5_MINI",
+      "model": "gpt-5-mini",
+      "estimate": 13835,
+      "score": 0.011926273942898446
+    },
+    "buyer": {
+      "name": "GPT_5",
+      "model": "gpt-5",
+      "estimate": 14050,
+      "score": 0.0035587188612099642
+    }
+  },
+  {
+    "id": "1766707236915_1",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-26T00:04:19.097Z",
+    "item": "Premium Domain Name 'AI-Agent.com'",
+    "trueValue": 50000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "GPT_5",
+      "model": "gpt-5",
+      "estimate": 54859,
+      "score": 0
+    },
+    "buyer": {
+      "name": "GPT_5_MINI",
+      "model": "gpt-5-mini",
+      "estimate": 48884,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766707152443_1",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-26T00:00:14.371Z",
+    "item": "Used 2020 Tesla Model 3",
+    "trueValue": 25000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "HAIKU_4_5",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 22737,
+      "score": 0
+    },
+    "buyer": {
+      "name": "GEMINI_FLASH_PREVIEW",
+      "model": "gemini-3-flash-preview",
+      "estimate": 24810,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766707107073_2",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-25T23:59:09.527Z",
+    "item": "Premium Domain Name 'AI-Agent.com'",
+    "trueValue": 50000,
+    "dealReached": true,
+    "dealPrice": 92000,
+    "seller": {
+      "name": "GPT_5_2",
+      "model": "gpt-5.2",
+      "estimate": 63459,
+      "score": 0.4497549598953655
+    },
+    "buyer": {
+      "name": "HAIKU_4_5",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 64736,
+      "score": -0.42115669797330696
+    }
+  },
+  {
+    "id": "1766707071765_1",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-25T23:58:27.071Z",
+    "item": "Used 2020 Tesla Model 3",
+    "trueValue": 25000,
+    "dealReached": true,
+    "dealPrice": 21600,
+    "seller": {
+      "name": "HAIKU_4_5",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 21603,
+      "score": -0.00013886960144424384
+    },
+    "buyer": {
+      "name": "GPT_5_2",
+      "model": "gpt-5.2",
+      "estimate": 21915,
+      "score": 0.014373716632443531
+    }
+  },
+  {
+    "id": "1766707006947_2",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-25T23:57:51.763Z",
+    "item": "Vintage Rolex Watch",
+    "trueValue": 38000,
+    "dealReached": true,
+    "dealPrice": 42500,
+    "seller": {
+      "name": "GPT_5_MINI",
+      "model": "gpt-5-mini",
+      "estimate": 40560,
+      "score": 0.04783037475345168
+    },
+    "buyer": {
+      "name": "HAIKU_4_5",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 37625,
+      "score": -0.12956810631229235
+    }
+  },
+  {
+    "id": "1766706900876_1",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-25T23:56:46.945Z",
+    "item": "Premium Domain Name 'AI-Agent.com'",
+    "trueValue": 50000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "HAIKU_4_5",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 54910,
+      "score": 0
+    },
+    "buyer": {
+      "name": "GPT_5_MINI",
+      "model": "gpt-5-mini",
+      "estimate": 49382,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766706793508_2",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-25T23:55:00.875Z",
+    "item": "Premium Domain Name 'AI-Agent.com'",
+    "trueValue": 50000,
+    "dealReached": true,
+    "dealPrice": 47500,
+    "seller": {
+      "name": "GPT_5",
+      "model": "gpt-5",
+      "estimate": 34698,
+      "score": 0.3689549829961381
+    },
+    "buyer": {
+      "name": "HAIKU_4_5",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 38571,
+      "score": -0.23149516476108994
+    }
+  },
+  {
+    "id": "1766706622380_1",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-25T23:53:13.507Z",
+    "item": "Vintage Rolex Watch",
+    "trueValue": 38000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "HAIKU_4_5",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 41279,
+      "score": 0
+    },
+    "buyer": {
+      "name": "GPT_5",
+      "model": "gpt-5",
+      "estimate": 39084,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766706545662_2",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-25T23:50:22.378Z",
+    "item": "Used 2020 Tesla Model 3",
+    "trueValue": 25000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "GEMINI_FLASH_PREVIEW",
+      "model": "gemini-3-flash-preview",
+      "estimate": 25418,
+      "score": 0
+    },
+    "buyer": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 22855,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766706463463_1",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-25T23:49:05.660Z",
+    "item": "Rare Digital Art NFT",
+    "trueValue": 15000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 11835,
+      "score": 0
+    },
+    "buyer": {
+      "name": "GEMINI_FLASH_PREVIEW",
+      "model": "gemini-3-flash-preview",
+      "estimate": 11574,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766706385481_2",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-25T23:47:37.732Z",
+    "item": "Rare Digital Art NFT",
+    "trueValue": 15000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "GPT_5_2",
+      "model": "gpt-5.2",
+      "estimate": 18511,
+      "score": 0
+    },
+    "buyer": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 17043,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766706315699_1",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-25T23:46:25.479Z",
+    "item": "Rare Digital Art NFT",
+    "trueValue": 15000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 22393,
+      "score": 0
+    },
+    "buyer": {
+      "name": "GPT_5_2",
+      "model": "gpt-5.2",
+      "estimate": 22006,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766706225009_2",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-25T23:45:15.697Z",
+    "item": "Enterprise SaaS Contract (Annual)",
+    "trueValue": 120000,
+    "dealReached": true,
+    "dealPrice": 130000,
+    "seller": {
+      "name": "GPT_5_MINI",
+      "model": "gpt-5-mini",
+      "estimate": 128307,
+      "score": 0.0131949153202865
+    },
+    "buyer": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 142565,
+      "score": 0.08813523655876267
+    }
+  },
+  {
+    "id": "1766706111259_1",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-25T23:43:45.008Z",
+    "item": "Premium Domain Name 'AI-Agent.com'",
+    "trueValue": 50000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 53341,
+      "score": 0
+    },
+    "buyer": {
+      "name": "GPT_5_MINI",
+      "model": "gpt-5-mini",
+      "estimate": 42017,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766705903062_2",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-25T23:41:51.258Z",
+    "item": "Rare Digital Art NFT",
+    "trueValue": 15000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "GPT_5",
+      "model": "gpt-5",
+      "estimate": 12868,
+      "score": 0
+    },
+    "buyer": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 9029,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766705895691_2",
+    "tournament": "Eager Hawk 85",
+    "date": "2025-12-25T23:41:27.009Z",
+    "item": "Used 2020 Tesla Model 3",
+    "trueValue": 25000,
+    "dealReached": true,
+    "dealPrice": 27000,
+    "seller": {
+      "name": "GPT_5_MINI",
+      "model": "gpt-5-mini",
+      "estimate": 26933,
+      "score": 0.0024876545501800766
+    },
+    "buyer": {
+      "name": "GPT_5",
+      "model": "gpt-5",
+      "estimate": 28410,
+      "score": 0.04963041182682154
+    }
+  },
+  {
+    "id": "1766705799002_1",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-25T23:38:23.060Z",
+    "item": "Vintage Rolex Watch",
+    "trueValue": 38000,
+    "dealReached": true,
+    "dealPrice": 40000,
+    "seller": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 39092,
+      "score": 0.023227258774173743
+    },
+    "buyer": {
+      "name": "GPT_5",
+      "model": "gpt-5",
+      "estimate": 40646,
+      "score": 0.015893322836195444
+    }
+  },
+  {
+    "id": "1766705644624_1",
+    "tournament": "Eager Hawk 85",
+    "date": "2025-12-25T23:38:15.689Z",
+    "item": "Used 2020 Tesla Model 3",
+    "trueValue": 25000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "GPT_5",
+      "model": "gpt-5",
+      "estimate": 24750,
+      "score": 0
+    },
+    "buyer": {
+      "name": "GPT_5_MINI",
+      "model": "gpt-5-mini",
+      "estimate": 23212,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766705757640_2",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-25T23:36:39.000Z",
+    "item": "Enterprise SaaS Contract (Annual)",
+    "trueValue": 120000,
+    "dealReached": true,
+    "dealPrice": 108000,
+    "seller": {
+      "name": "HAIKU_4_5",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 101389,
+      "score": 0.06520431210486345
+    },
+    "buyer": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 124327,
+      "score": 0.13132304326493843
+    }
+  },
+  {
+    "id": "1766705698529_1",
+    "tournament": "Calm Falcon 54",
+    "date": "2025-12-25T23:35:57.638Z",
+    "item": "Enterprise SaaS Contract (Annual)",
+    "trueValue": 120000,
+    "dealReached": true,
+    "dealPrice": 129000,
+    "seller": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 113681,
+      "score": 0.13475426852332403
+    },
+    "buyer": {
+      "name": "HAIKU_4_5",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 106834,
+      "score": -0.20748076455061124
+    }
+  },
+  {
+    "id": "1766705380388_2",
+    "tournament": "Tourney A",
+    "date": "2025-12-25T23:31:20.596Z",
+    "item": "Rare Digital Art NFT",
+    "trueValue": 15000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "SONNET_4_5",
+      "model": "claude-sonnet-4-5-20250929",
+      "estimate": 16060,
+      "score": 0
+    },
+    "buyer": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 10024,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766705266627_1",
+    "tournament": "Tourney A",
+    "date": "2025-12-25T23:29:40.386Z",
+    "item": "Premium Domain Name 'AI-Agent.com'",
+    "trueValue": 50000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 56381,
+      "score": 0
+    },
+    "buyer": {
+      "name": "SONNET_4_5",
+      "model": "claude-sonnet-4-5-20250929",
+      "estimate": 43889,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766704681443_2",
+    "tournament": "Calm Bear 28",
+    "date": "2025-12-25T23:19:47.642Z",
+    "item": "Premium Domain Name 'AI-Agent.com'",
+    "trueValue": 50000,
+    "dealReached": false,
+    "dealPrice": null,
+    "seller": {
+      "name": "SONNET_4_5",
+      "model": "claude-sonnet-4-5-20250929",
+      "estimate": 51588,
+      "score": 0
+    },
+    "buyer": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 37656,
+      "score": 0
+    }
+  },
+  {
+    "id": "1766704629756_1",
+    "tournament": "Calm Bear 28",
+    "date": "2025-12-25T23:18:01.441Z",
+    "item": "Used 2020 Tesla Model 3",
+    "trueValue": 25000,
+    "dealReached": true,
+    "dealPrice": 27000,
+    "seller": {
+      "name": "OPUS_4_5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 22916,
+      "score": 0.17821609355908535
+    },
+    "buyer": {
+      "name": "SONNET_4_5",
+      "model": "claude-sonnet-4-5-20250929",
+      "estimate": 27171,
+      "score": 0.006293474660483604
+    }
+  },
+  {
+    "id": "1766698816803_2",
+    "tournament": "Test Tourney",
+    "date": "2025-12-25T21:41:32.931Z",
+    "item": "Vintage Rolex Watch",
+    "trueValue": 38000,
+    "dealReached": true,
+    "dealPrice": 45750,
+    "seller": {
+      "name": "SONNET",
+      "model": "claude-sonnet-4-5-20250929",
+      "estimate": 35763,
+      "score": 0.2792550960489892
+    },
+    "buyer": {
+      "name": "HAIKU",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 38661,
+      "score": -0.18336307907193294
+    }
+  },
+  {
+    "id": "1766698751921_1",
+    "tournament": "Test Tourney",
+    "date": "2025-12-25T21:40:16.802Z",
+    "item": "Vintage Rolex Watch",
+    "trueValue": 38000,
+    "dealReached": true,
+    "dealPrice": 38000,
+    "seller": {
+      "name": "HAIKU",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 36713,
+      "score": 0.03505570233977065
+    },
+    "buyer": {
+      "name": "SONNET",
+      "model": "claude-sonnet-4-5-20250929",
+      "estimate": 36058,
+      "score": -0.053857673747850686
+    }
+  },
+  {
+    "id": "1766698647767_2",
+    "tournament": "Test Tourney",
+    "date": "2025-12-25T21:39:11.919Z",
+    "item": "Vintage Rolex Watch",
+    "trueValue": 38000,
+    "dealReached": true,
+    "dealPrice": 40500,
+    "seller": {
+      "name": "SONNET",
+      "model": "claude-sonnet-4-5-20250929",
+      "estimate": 41235,
+      "score": -0.017824663514005093
+    },
+    "buyer": {
+      "name": "OPUS",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 40449,
+      "score": -0.0012608469925090855
+    }
+  },
+  {
+    "id": "1766698541903_1",
+    "tournament": "Test Tourney",
+    "date": "2025-12-25T21:37:27.765Z",
+    "item": "Vintage Rolex Watch",
+    "trueValue": 38000,
+    "dealReached": true,
+    "dealPrice": 40000,
+    "seller": {
+      "name": "OPUS",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 41234,
+      "score": -0.02992675947034001
+    },
+    "buyer": {
+      "name": "SONNET",
+      "model": "claude-sonnet-4-5-20250929",
+      "estimate": 36502,
+      "score": -0.09583036545942689
+    }
+  },
+  {
+    "id": "1766698475298_2",
+    "tournament": "Test Tourney",
+    "date": "2025-12-25T21:35:41.901Z",
+    "item": "Vintage Rolex Watch",
+    "trueValue": 38000,
+    "dealReached": true,
+    "dealPrice": 40250,
+    "seller": {
+      "name": "HAIKU",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 40202,
+      "score": 0.0011939704492313816
+    },
+    "buyer": {
+      "name": "OPUS",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 40463,
+      "score": 0.0052640684081753705
+    }
+  },
+  {
+    "id": "1766698406458_1",
+    "tournament": "Test Tourney",
+    "date": "2025-12-25T21:34:35.297Z",
+    "item": "Vintage Rolex Watch",
+    "trueValue": 38000,
+    "dealReached": true,
+    "dealPrice": 40000,
+    "seller": {
+      "name": "OPUS",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 39271,
+      "score": 0.018563316442158334
+    },
+    "buyer": {
+      "name": "HAIKU",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 34740,
+      "score": -0.1514104778353483
+    }
+  },
+  {
+    "id": "1766696105195",
+    "date": "2025-12-25T20:56:04.874Z",
+    "item": "Vintage Rolex Watch",
+    "trueValue": 38000,
+    "dealReached": true,
+    "dealPrice": 41500,
+    "seller": {
+      "name": "Opus 4.5",
+      "model": "claude-opus-4-5-20251101",
+      "estimate": 40637,
+      "score": 0.021236803897925535
+    },
+    "buyer": {
+      "name": "Haiku 4.5",
+      "model": "claude-haiku-4-5-20251001",
+      "estimate": 38415,
+      "score": -0.08030717167773005
+    }
+  },
+  {
+    "id": "1766694448751",
+    "date": "2025-12-25T20:28:26.194Z",
+    "item": "Rare 1st Edition Comic Book",
+    "trueValue": 1000,
+    "dealReached": true,
+    "dealPrice": 925,
+    "buyer": {
+      "name": "Opus 4.5",
+      "score": 0.06376518218623482,
+      "estimate": 988
+    },
+    "seller": {
+      "name": "Haiku 4.5",
+      "score": -0.15679124886052873,
+      "estimate": 1097
+    }
+  }
+]
