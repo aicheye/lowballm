@@ -20,16 +20,28 @@ Install dependencies:
 npm install
 ```
 
-Run the benchmark server (development):
+Run the frontend (Vite dev server):
 
 ```bash
-node server/server.js
+npm run dev
+```
+
+Run the backend server (API + benchmark orchestration):
+
+```bash
+npm run start
 ```
 
 Run the CLI benchmark runner:
 
 ```bash
-node benchmark-cli/index.js
+npm run benchmark
+```
+
+Validate the environment (Node version, basic layout):
+
+```bash
+npm run validate
 ```
 
 ## Project Layout
@@ -42,7 +54,7 @@ node benchmark-cli/index.js
 
 ## Logs & Results
 
-Run manifests are saved to `public/logs/` with timestamps. Each manifest contains run parameters, agent configs, and outcome metrics useful for analysis.
+Run manifests are generated to `public/logs/` by the benchmark runners. This folder is now ignored by Git to avoid bloating the repository with large historical runs. To inspect recent runs, open the `public/logs/` files on your machine after running a benchmark.
 
 ## Development
 

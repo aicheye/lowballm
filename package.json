@@ -4,9 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "vite",
+    "dev:all": "concurrently \"npm run server\" \"npm run client\"",
     "client": "vite",
     "server": "node server/server.js",
+    "start": "node server/server.js",
+    "benchmark": "node benchmark-cli/index.js",
+    "validate": "node scripts/validate-env.js",
     "build": "vite build",
     "preview": "vite preview"
   },

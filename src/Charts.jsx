@@ -139,11 +139,14 @@ export function Charts({ onBack }) {
       modelStats[buyerModel].count++;
     });
 
-    return Object.values(modelStats).map(s => ({
+    const arr = Object.values(modelStats).map(s => ({
       name: s.name,
       avgSurplus: parseFloat((s.surplusSum / s.count * 100).toFixed(2)),
       count: s.count
     }));
+
+    // Sort descending so largest average surplus appears first (highest -> lowest)
+    return _.orderBy(arr, ['avgSurplus'], ['desc']);
   }, [runs]);
 
   // 3. Pareto efficiency scatter
@@ -195,16 +198,18 @@ export function Charts({ onBack }) {
 
     const curves = {};
 
+    // Aggregate per-model, per-turn offers (seller role)
     runs.forEach(run => {
-      const model = getModelName(run.seller.model); // Group by model base name
+      const model = getModelName(run.seller.model);
       if (!curves[model]) curves[model] = {};
 
-      const firstOffer = run.logs.find(l => l.role === 'seller' && l.content.offer)?.content.offer;
-
       run.logs.forEach((log, idx) => {
-        if (log.role === 'seller' && log.content.offer) {
+        if (log.role === 'seller' && log.content && log.content.offer) {
           const turn = idx + 1;
           const offerPct = (log.content.offer / run.seller.estimate) * 100;
+
+          // Remove extreme outliers (offers more than 500% of estimate)
+          if (offerPct > 500 || offerPct < -500) return;
 
           if (!curves[model][turn]) curves[model][turn] = { sum: 0, count: 0 };
           curves[model][turn].sum += offerPct;
@@ -213,17 +218,59 @@ export function Charts({ onBack }) {
       });
     });
 
-    // Formatting for Recharts: array of { turn: 1, modelA: 150, modelB: 140 ... }
+    // Collect turns and models
     const turns = new Set();
     Object.values(curves).forEach(modelObj => Object.keys(modelObj).forEach(t => turns.add(parseInt(t))));
     const sortedTurns = Array.from(turns).sort((a, b) => a - b);
+    const models = Object.keys(curves);
 
-    return sortedTurns.map(t => {
-      const entry = { turn: t };
-      Object.keys(curves).forEach(model => {
-        if (curves[model][t]) {
-          entry[model] = parseFloat((curves[model][t].sum / curves[model][t].count).toFixed(1));
+    // Compute per-model total sample counts so we can focus on the most-represented models
+    const modelCounts = models.reduce((acc, m) => {
+      acc[m] = Object.values(curves[m]).reduce((s, v) => s + (v.count || 0), 0);
+      return acc;
+    }, {});
+
+    // Show only top N models to reduce visual clutter
+    const TOP_N = 6;
+    const topModels = models.sort((a, b) => (modelCounts[b] || 0) - (modelCounts[a] || 0)).slice(0, TOP_N);
+
+    // Build raw per-turn series for top models
+    const rawSeries = topModels.reduce((acc, m) => {
+      acc[m] = sortedTurns.map(t => {
+        const v = curves[m][t];
+        return v ? parseFloat((v.sum / v.count).toFixed(1)) : null;
+      });
+      return acc;
+    }, {});
+
+    // Simple smoothing (3-point weighted moving average) to make lines easier to read
+    const smooth = arr => {
+      const out = [];
+      for (let i = 0; i < arr.length; i++) {
+        const prev = arr[i - 1] || arr[i];
+        const cur = arr[i] || (arr[i - 1] || arr[i + 1] || null);
+        const next = arr[i + 1] || arr[i];
+        if (cur === null) {
+          out.push(null);
+          continue;
         }
+        const s = ( (prev === null ? cur : prev) * 0.25 ) + (cur * 0.5) + ( (next === null ? cur : next) * 0.25 );
+        out.push(parseFloat(s.toFixed(1)));
+      }
+      return out;
+    };
+
+    const smoothed = {};
+    topModels.forEach(m => {
+      smoothed[m] = smooth(rawSeries[m]);
+    });
+
+    // Formatting for Recharts: array of { turn: 1, modelA: 150, modelB: 140 ... }
+    return sortedTurns.map((t, idx) => {
+      const entry = { turn: t };
+      topModels.forEach(model => {
+        const val = smoothed[model][idx];
+        if (val !== null && val !== undefined) entry[model] = val;
       });
       return entry;
     });
@@ -248,10 +295,15 @@ export function Charts({ onBack }) {
         const anchor = (sellerFirst - run.trueValue) / run.trueValue;
         const outcome = (run.dealPrice - run.trueValue) / run.trueValue;
 
-        // Only include if anchor is "ambitious" (positive for seller)
+        const x = parseFloat((anchor * 100).toFixed(1));
+        const y = parseFloat((outcome * 100).toFixed(1));
+
+        // Filter extreme outliers beyond +/-500%
+        if (Math.abs(x) > 500 || Math.abs(y) > 500) return;
+
         points.push({
-          x: parseFloat((anchor * 100).toFixed(1)),
-          y: parseFloat((outcome * 100).toFixed(1)),
+          x,
+          y,
           role: 'Seller',
           model: getModelName(run.seller.model)
         });
@@ -564,7 +616,7 @@ export function Charts({ onBack }) {
         {/* 5. Concession Curves */}
         <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700 md:col-span-2">
           <h3 className="text-lg font-semibold mb-2 text-yellow-400">5. Concession Curves (Seller)</h3>
-          <p className="text-xs text-slate-400 mb-6">Average Offer % of Estimate over Turns. Flat = Stubborn. Steep = Panic.</p>
+          <p className="text-xs text-slate-400 mb-6">Average Offer % of Estimate over Turns. Flat = Stubborn. Steep = Panic. Showing top models by sample count.</p>
           <div className="h-64 text-xs">
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={concessionData} margin={{ top: 5, right: 20, bottom: 20, left: 10 }}>
@@ -574,7 +626,17 @@ export function Charts({ onBack }) {
                 <Tooltip contentStyle={{ backgroundColor: '#0f172a', color: '#f1f5f9', border: '1px solid #334155', borderRadius: '4px' }} itemStyle={{ color: '#f1f5f9' }} labelStyle={{ color: '#94a3b8' }} />
                 <Legend layout="horizontal" verticalAlign="top" align="right" wrapperStyle={{ paddingBottom: '10px' }} />
                 {Object.keys(concessionData[0] || {}).filter(k => k !== 'turn').map((model, i) => (
-                  <Line key={model} type="monotone" dataKey={model} stroke={colors[i % colors.length]} strokeWidth={2} dot={false} />
+                  <Line
+                    key={model}
+                    type="monotone"
+                    dataKey={model}
+                    stroke={colors[i % colors.length]}
+                    strokeWidth={3}
+                    strokeOpacity={0.95}
+                    dot={false}
+                    // Slightly smooth rendering and less visual clutter
+                    isAnimationActive={false}
+                  />
                 ))}
               </LineChart>
             </ResponsiveContainer>

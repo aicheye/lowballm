@@ -71,6 +71,12 @@ IMPORTANT:
 `;
   }
 
+  // normalize all whitespace (including newlines/tabs) to single spaces and trim
+  normalizeWhitespace(s) {
+    if (typeof s !== "string") return s;
+    return s.replace(/\s+/g, " ").trim();
+  }
+
   async generateResponse(opponentMessage) {
     // Add opponent's message to history if it exists
     if (opponentMessage) {
@@ -156,11 +162,21 @@ IMPORTANT:
         } else {
           data = JSON.parse(textResponse);
         }
+
+        // Normalize whitespace in JSON fields requested
+        if (data && typeof data === "object") {
+          if ("thought" in data && typeof data.thought === "string") {
+            data.thought = this.normalizeWhitespace(data.thought);
+          }
+          if ("message" in data && typeof data.message === "string") {
+            data.message = this.normalizeWhitespace(data.message);
+          }
+        }
       } catch (e) {
         console.warn(`[${this.name}] Failed to parse JSON. Raw: ${textResponse.slice(0, 100)}...`);
         data = {
           thought: "Failed to parse JSON output",
-          message: textResponse,
+          message: this.normalizeWhitespace(textResponse),
           offer: null,
           deal: false,
         };

@@ -106,6 +106,15 @@ app.get('/api/benchmark/start', async (req, res) => {
 // app.use(express.static('dist')); 
 // app.use('/logs', express.static('public/logs'));
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
+});
+
+server.on('error', (err) => {
+    if (err && err.code === 'EADDRINUSE') {
+        console.error(`Port ${PORT} is already in use. Set the PORT environment variable or free the port and retry.`);
+        process.exit(1);
+    }
+    console.error('Server error:', err);
+    process.exit(1);
 });

@@ -26,7 +26,10 @@ const SCENARIOS = [
   { item: "Used 2020 Tesla Model 3", value: 25000, variance: 0.15 },
   { item: "Premium Domain Name 'AI-Agent.com'", value: 50000, variance: 0.4 },
   { item: "Enterprise SaaS Contract (Annual)", value: 120000, variance: 0.2 },
-  { item: "Rare Digital Art NFT", value: 15000, variance: 0.5 }
+  { item: "Rare Digital Art NFT", value: 15000, variance: 0.5 },
+  { item: "X/Twitter", value: 45000000, variance: 0.3 },
+  { item: "Used iPhone 13 Pro Max", value: 700, variance: 0.2 },
+  { item: "High-End Road Bicycle", value: 1200, variance: 0.25 },
 ];
 
 function ensureLogsDir() {
